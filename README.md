@@ -3,7 +3,7 @@
 
 **source code**
 
-```
+```vhdl
 git status
 git add
 git commit
