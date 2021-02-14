@@ -1,10 +1,15 @@
 # Digital-electronics-1
-# Labs
+#1)
+#2)
+c | b | a | f (c, b, a)
+--|---|---|------------
+0 | 0 | 0 | 1
+0 | 0 | 1 | 1
+0 | 1 | 0 | 0
+0 | 1 | 1 | 0
+1 | 0 | 0 | 0
+1 | 0 | 1 | 1
+1 | 1 | 0 | 0
+1 | 1 | 1 | 0
 
-**source code**
 
-```vhdl
-git status
-git add
-git commit
-```
