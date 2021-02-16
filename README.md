@@ -49,7 +49,8 @@ begin
     fdb2 <= a or (b and c);
 
 end architecture dataflow;
-
 ```
 [EDA](https://www.edaplayground.com/x/qQuT)
+https://github.com/xhorna16/Digital-electronics-1/blob/main/and-or.jpg
 # 3)
+https://github.com/xhorna16/Digital-electronics-1/blob/main/distr.jpg
