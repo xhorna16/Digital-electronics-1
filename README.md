@@ -1,6 +1,7 @@
 # Digital-electronics-1
 # 1)
-to do (https://github.com/xhorna16/Digital-electronics-1)
+to do ()
+https://github.com/xhorna16/Digital-electronics-1
 # 2)
 c | b | a | f (c, b, a)
 --|---|---|------------
