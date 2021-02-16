@@ -43,5 +43,5 @@ begin
     for_o <= (not (not a_i) or b_i) or (not (b_i or c_i));
 
 end architecture dataflow;
-
+```
 #3)
