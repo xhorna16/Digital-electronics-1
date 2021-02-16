@@ -1,6 +1,6 @@
 # Digital-electronics-1
-#1)
-#2)
+# 1)
+# 2)
 c | b | a | f (c, b, a)
 --|---|---|------------
 0 | 0 | 0 | 1
@@ -12,7 +12,7 @@ c | b | a | f (c, b, a)
 1 | 1 | 0 | 0
 1 | 1 | 1 | 0
 
-##design.vhdl
+## design.vhdl
 ```vhdl
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations
@@ -44,4 +44,4 @@ begin
 
 end architecture dataflow;
 ```
-#3)
+# 3)
