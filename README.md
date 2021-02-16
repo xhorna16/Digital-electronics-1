@@ -56,10 +56,10 @@ https://www.edaplayground.com/x/qQuT
 ```text
 Image
 ```
-https://github.com/xhorna16/Digital-electronics-1/blob/main/and-or.jpg
+https://github.com/xhorna16/Digital-electronics-1/blob/main/Labs/01-gates/and-or.jpg
 # 3)
 ```text
 x=a, y=b, z=c
 Image:
 ```
-https://github.com/xhorna16/Digital-electronics-1/blob/main/distr.jpg
+https://github.com/xhorna16/Digital-electronics-1/blob/main/Labs/01-gates/distr.jpg
