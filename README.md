@@ -1,6 +1,6 @@
 # Digital-electronics-1
 # 1)
-https://github.com/xhorna16/Digital-electronics-1
+to do (https://github.com/xhorna16/Digital-electronics-1)
 # 2)
 c | b | a | f (c, b, a)
 --|---|---|------------
@@ -45,4 +45,5 @@ begin
 
 end architecture dataflow;
 ```
+https://www.edaplayground.com/x/qQuT
 # 3)
