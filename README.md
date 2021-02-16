@@ -24,12 +24,15 @@ use ieee.std_logic_1164.all;-- Package for data types and logic operations
 ------------------------------------------------------------------------
 entity gates is
     port(
-        a_i    : in  std_logic;         -- Data input
-        b_i    : in  std_logic;         -- Data input
-        c_i    : in  std_logic;         -- Data input
+        a    : in  std_logic;         -- Data input
+        b    : in  std_logic;         -- Data input
+        c    : in  std_logic;         -- Data input
         for_o  : out std_logic;         -- OR output function
         fand_o : out std_logic;         -- AND output function
-        --fxor_o : out std_logic          -- XOR output function
+        fda1 : out std_logic;           -- distributive laws
+        fda2 : out std_logic;
+        fdb1 : out std_logic;
+        fdb2 : out std_logic
     );
 end entity gates;
 
@@ -38,13 +41,15 @@ end entity gates;
 ------------------------------------------------------------------------
 architecture dataflow of gates is
 begin
-    --for_o  <= a_i or b_i;
-    --fand_o <= a_i and b_i;
-    --fxor_o <= a_i xor b_i;
-    fand_o <= not ((not (a_i and (not b_i))) and (not((not c_i) and (not b_i))));
-    for_o <= (not (not a_i) or b_i) or (not (b_i or c_i));
+    fand_o <= not (((not (a) and (not b))) and (not((not c) and (not b))));
+    for_o <= (not (not a) or b) or (not (b or c));
+    fda1 <= (a and b) or (a and c);
+    fda2 <= a and (b or c);
+    fdb1 <= (a or b) and (a or c);
+    fdb2 <= a or (b and c);
 
 end architecture dataflow;
+
 ```
 [EDA](https://www.edaplayground.com/x/qQuT)
 # 3)
