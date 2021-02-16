@@ -1,5 +1,6 @@
 # Digital-electronics-1
 # 1)
+https://github.com/xhorna16/Digital-electronics-1
 # 2)
 c | b | a | f (c, b, a)
 --|---|---|------------
