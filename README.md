@@ -1,7 +1,6 @@
 # Digital-electronics-1
-# 1)
-
-[repository](https://github.com/xhorna16/Digital-electronics-1)
+# 1) Repository link
+https://github.com/xhorna16/Digital-electronics-1
 # 2)
 c | b | a | f (c, b, a)
 --|---|---|------------
@@ -50,7 +49,17 @@ begin
 
 end architecture dataflow;
 ```
-[EDA](https://www.edaplayground.com/x/qQuT)
+```text
+EDA:
+```
+https://www.edaplayground.com/x/qQuT
+```text
+Image
+```
 https://github.com/xhorna16/Digital-electronics-1/blob/main/and-or.jpg
 # 3)
+```text
+x=a, y=b, z=c
+Image:
+```
 https://github.com/xhorna16/Digital-electronics-1/blob/main/distr.jpg
