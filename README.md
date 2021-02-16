@@ -46,5 +46,5 @@ begin
 
 end architecture dataflow;
 ```
-[EDA(]https://www.edaplayground.com/x/qQuT)
+[EDA](https://www.edaplayground.com/x/qQuT)
 # 3)
