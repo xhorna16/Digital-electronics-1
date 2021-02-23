@@ -63,3 +63,5 @@ x=a, y=b, z=c
 Image:
 ```
 https://github.com/xhorna16/Digital-electronics-1/blob/main/Labs/01-gates/distr.jpg
+
+#02 K-maps
