@@ -23,7 +23,7 @@ Dec. eq. | B[1:0] | A [1:0] | B > A | B = A | B < A |
 15       | 11     | 11      | 0     | 1     | 0     |
 
 ## K-maps
-
+https://github.com/xhorna16/Digital-electronics-1/blob/main/karnaugh.jpg
 ## Binary comparator VHDL
 https://www.edaplayground.com/x/8Ud5
 
