@@ -82,4 +82,7 @@ p_stimulus : process
 ### simulation results
 ![pc3-graf](pc3-graf.png)
 ## Tutorial
-Vivado: File-Project-New, Create a new Vivado project, Next - Name and location - RTL Project, Next - Add Sources, Create File, type VHDL, File name, Target and Simulation language set to VHDL - Add constraints, Next - Default Part, Boards, Nexys A7-50T, Next - New Project Summary, Finish
+Project creation: Vivado: File-Project-New, Create a new Vivado project, Next - Name and location - RTL Project, Next - Add Sources, Create File, type VHDL, File name, Target and Simulation language set to VHDL - Add constraints, Next - Default Part, Boards, Nexys A7-50T, Next - New Project Summary, Finish
+Adding source file: Vivado: File-Add Sources-Add or create design sources, Next-Create File, File name, type VHDL, Finish-Define Variable, OK; edit the file
+Adding testbench file: Vivado: File-Add Sources-Add or create simulation sources, Next-Create File, File name, type VHDL, Finish-Define Variable, OK; edit the file
+Running simulation: Vivado: Flow-Run Simulation-Behavioral Simulation
