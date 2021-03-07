@@ -78,5 +78,7 @@ p_stimulus : process
         wait;
     end process p_stimulus;
 ```
+### simulation results
+![](pc3-graf)
 ## Tutorial
 Vivado: File-Project-New, Create a new Vivado project, Next - Name and location - RTL Project, Next - Add Sources, Create File, type VHDL, File name, Target and Simulation language set to VHDL - Add constraints, Next - Default Part, Boards, Nexys A7-50T, Next - New Project Summary, Finish
