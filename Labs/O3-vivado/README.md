@@ -1,4 +1,5 @@
 # 03-vivado
+https://github.com/xhorna16/Digital-electronics-1/tree/main/Labs/O3-vivado
 ## Switches and LEDs
 |Switch|Pin|
 |------|---|
