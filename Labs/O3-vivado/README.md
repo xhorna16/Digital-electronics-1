@@ -1,7 +1,7 @@
 # 03-vivado
 ## Switches and LEDs
-|------|---|
 |Switch|Pin|
+|------|---|
 |a_i[0]|J15|
 |a_i[1]|L16|
 |b_i[0]|M13|
