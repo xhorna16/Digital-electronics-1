@@ -1,4 +1,5 @@
 # 04-segment
+https://github.com/xhorna16/Digital-electronics-1/tree/main/Labs/04-segment
 ## truthtable 1
 Hex|Inputs|A|B|C|D|E|F|G
 ---|------|-|-|-|-|-|-|-
