@@ -1,5 +1,5 @@
 # 04-segment
-## truthtable
+## truthtable 1
 Hex|Inputs|A|B|C|D|E|F|G
 ---|------|-|-|-|-|-|-|-
  0 | 0000 |0|0|0|0|0|0|1
@@ -149,3 +149,7 @@ p_stimulus : process
     end process p_stimulus;
 ```
 ## waveforms
+
+## top
+
+## truthtable 2
