@@ -19,7 +19,7 @@ Hex|Inputs|A|B|C|D|E|F|G
  D | 0111 |0|0|0|0|1|1|0
  E | 0111 |0|1|1|0|0|0|0
  F | 0111 |0|1|1|1|0|0|0
-
+ ![schem](n4r.png)
 ## architecture
 ```vhdl
 architecture Behavioral of hex_7seg is
