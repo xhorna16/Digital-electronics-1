@@ -150,7 +150,7 @@ p_stimulus : process
     end process p_stimulus;
 ```
 ## waveforms
-
+![pc4-graf[(pc4-graf.png)
 ## top
 
 ## truthtable 2
