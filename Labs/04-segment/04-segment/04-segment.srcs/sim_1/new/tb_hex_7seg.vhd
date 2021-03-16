@@ -42,7 +42,8 @@ architecture testbench of tb_hex_7seg is
     uut_hex_7seg : entity work.hex_7seg
         port map(
             hex_i           => s_hex,
-            seg_o           => s_seg
+            seg_o           => s_seg,
+            seg_o (7) 
                 );
 p_stimulus : process
         begin

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 16 15:41:30 2021
+# Process ID: 9616
+# Current directory: C:/Git/Digital-electronics-1/Labs/04-segment/04-segment/04-segment.runs/synth_1
+# Command line: vivado.exe -log hex_7seg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hex_7seg.tcl
+# Log file: C:/Git/Digital-electronics-1/Labs/04-segment/04-segment/04-segment.runs/synth_1/hex_7seg.vds
+# Journal file: C:/Git/Digital-electronics-1/Labs/04-segment/04-segment/04-segment.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hex_7seg.tcl -notrace
