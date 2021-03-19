@@ -1,11 +1,13 @@
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
-   | :-: | :-: | :-: | :-: |
-   | 2&nbsp;ms | 200 000 | `x"3_0D40"` | `b"0011_0000_1101_0100_0000"` |
-   | 4&nbsp;ms | 400 000 | `x"6_1A80"` | `b"0110_0001_1010_1000_0000"` |
-   | 10&nbsp;ms | 1 000 000 | `x"F_4240"` | `b"1111_0100_0010_0100_0000"` |
-   | 250&nbsp;ms | 25 000 000 | `x"17D_7840"` | `b"0001_0111_1101_0111_1000_0100_0000"` |
-   | 500&nbsp;ms | 50 000 000 | `x"2FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
-   | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
+| :-: | :-: | :-: | :-: |
+| 2&nbsp;ms | 200 000 | `x"3_0D40"` | `b"0011_0000_1101_0100_0000"` |
+| 4&nbsp;ms | 400 000 | `x"6_1A80"` | `b"0110_0001_1010_1000_0000"` |
+| 10&nbsp;ms | 1 000 000 | `x"F_4240"` | `b"1111_0100_0010_0100_0000"` |
+| 250&nbsp;ms | 25 000 000 | `x"17D_7840"` | `b"0001_0111_1101_0111_1000_0100_0000"` |
+| 500&nbsp;ms | 50 000 000 | `x"2FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
+| 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
+  
+ 
 ### counter - process
 ```vhdl
 p_cnt_up_down : process(clk)
@@ -17,12 +19,11 @@ p_cnt_up_down : process(clk)
 
             elsif (en_i = '1') then       -- Test if counter is enabled
 
-
-                -- TEST COUNTER DIRECTION HERE
-
-
-                s_cnt_local <= s_cnt_local + 1;
-
+                if (cnt_up_i = '1') then
+                    s_cnt_local <= s_cnt_local + 1;
+                else
+                    s_cnt_local <= s_cnt_local - 1;
+                end if;
 
             end if;
         end if;
@@ -81,13 +82,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity top is
-    --generic(
-        --g_CNT_WIDTH :   natural := 4;
-        --g_MAX       :   natural := 50000000;
-        
-        --g_16B_WIDTH :   natural := 16;
-        --g_16B_MAX   :   natural := 1000000
-    --);
+   
     Port ( CLK100MHZ : in STD_LOGIC;
            BTNC : in STD_LOGIC;
            SW : in STD_LOGIC_VECTOR (0 downto 0);
