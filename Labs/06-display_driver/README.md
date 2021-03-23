@@ -151,11 +151,11 @@ begin
         begin
         -- Report a note at the begining of stimulus process
             report "Stimulus process started." severity note;        
-            s_data3_i     <= "0011";
-            s_data2_i     <= "0001";
-            s_data1_i     <= "0100";
-            s_data0_i     <= "0010";
-            s_dp_i        <= "0111";        
+            s_data3_i   <= "0011";
+            s_data2_i   <= "0001";
+            s_data1_i   <= "0100";
+            s_data0_i   <= "0010";
+            s_dp_i  <= "0111";        
             wait for 500 us;
             assert(s_seg_o = "0010010")
             report "Error - 1st digit." severity note;        
