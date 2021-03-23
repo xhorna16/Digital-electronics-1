@@ -27,3 +27,4 @@
   },
 }
 ```
+![obr](wavedrom.png)
