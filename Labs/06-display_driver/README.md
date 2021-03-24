@@ -1,3 +1,4 @@
+https://github.com/xhorna16/Digital-electronics-1/edit/main/Labs/06-display_driver/README.md
 ## Timing diagram
 ```
 {
