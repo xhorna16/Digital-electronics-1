@@ -1,6 +1,6 @@
-D:  q(n+1)=d
-JK: q(n+1)=j*/qn + /k* qn
-T:  q(n+1)=t*/qn + /t* qn
+D:  q(n+1)=d;
+JK: q(n+1)=j*/qn + /k* qn;
+T:  q(n+1)=t*/qn + /t* qn;
 
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
