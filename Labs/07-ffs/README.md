@@ -1,3 +1,4 @@
+<!--
 \begin{align*}
     q_{n+1}^D =&~ \\
     q_{n+1}^{JK} =&\\
@@ -28,3 +29,7 @@
    | ![rising](Images/eq_uparrow.png) | 0 | 1 | 1 |  |
    | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 |  |
    | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 |  |
+
+
+
+<!--
