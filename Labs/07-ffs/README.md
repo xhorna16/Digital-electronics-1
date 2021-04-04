@@ -1,7 +1,8 @@
+```
 D:  q(n+1)=d;
 JK: q(n+1)=j*/qn + /k* qn;
 T:  q(n+1)=t*/qn + /t* qn;
-
+```
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](sipka.png) | 0 | 0 | 0 |  |
@@ -132,7 +133,7 @@ p_stimulus : process
             wait;
         end process p_stimulus;
 ```
-## simulation results
+### simulation results
 ![sim1](sim1.png)
 
 ## d_ff_arst
@@ -162,3 +163,189 @@ begin
     end process p_d_ff_arst;
 end Behavioral;
 ```
+### testbench
+### simulation results
+## d_ff_jk_rst
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity jk_ff_rst is
+    Port ( clk : in STD_LOGIC;
+           j : in STD_LOGIC;
+           k : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           q : out STD_LOGIC;
+           q_bar : out STD_LOGIC);
+end jk_ff_rst;
+
+architecture Behavioral of jk_ff_rst is
+    signal s_q : STD_LOGIC;
+    signal s_q_bar : STD_LOGIC;
+begin
+    p_jk_ff_rst : process (clk) --reset will be done only if clk is changed
+    begin
+        if rising_edge (clk) then
+            if (rst = '1') then --the highest priority signal
+                s_q     <= '0';
+                s_q_bar <= '1';    
+            else
+                if (j = '0' and k = '0') then
+                    s_q     <= s_q;
+                    s_q_bar <= s_q_bar;
+                elsif (j = '0' and k = '1') then
+                    s_q     <= '0';
+                    s_q_bar <= '1';
+                elsif (j = '1' and k = '0') then
+                    s_q     <= '0';
+                    s_q_bar <= '1';
+                else
+                    s_q     <= not s_q;
+                    s_q_bar <= not s_q_bar;    
+                end if;
+            end if;
+        end if;
+    end process p_jk_ff_rst;
+    q     <= s_q;
+    q_bar <= s_q_bar;
+end Behavioral;
+```
+### testbench
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity tb_jk_ff_rst is
+--  Port ( );
+end tb_jk_ff_rst;
+
+architecture Behavioral of tb_jk_ff_rst is
+    constant o_CLK_100MHz_PERIOD : time := 10ns;
+        
+        signal s_clk   : std_logic;
+        signal s_j     : std_logic;
+        signal s_k     : std_logic;
+        signal s_rst  : std_logic;
+        signal s_q     : std_logic;
+        signal s_q_bar : std_logic;
+begin
+    uut_jk_ff_rst : entity work.jk_ff_rst
+        port map(
+            clk    => s_clk,
+            j     => s_j,
+            k     => s_k,
+            rst  => s_rst,
+            q     => s_q,
+            q_bar => s_q_bar
+        );
+
+    p_clk_gen : process
+        begin
+        while now < 750 ns loop
+            s_clk <= '0';
+            wait for o_CLK_100MHz_PERIOD / 2;
+            s_clk <= '1';
+            wait for o_CLK_100MHz_PERIOD / 2;
+        end loop;
+        wait;
+        end process p_clk_gen;
+        
+        p_reset_gen : process
+        begin
+            s_rst <= '0';
+            wait for 20 ns;
+            
+            s_rst <= '1';
+            wait for 155 ns;
+            
+            s_rst <= '0';
+            wait;
+        end process p_reset_gen;
+        p_stimulus : process
+        begin
+            -- Report a note at the beginning of stimulus process
+            report "Stimulus process started" severity note;
+
+            s_j  <= '0'; --1
+            s_k  <= '0';
+            wait for 26 ns;
+            s_j  <= '1';
+            s_k  <= '0';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 24 ns;
+            s_j  <= '0';
+            s_k  <= '1';
+            wait for 22 ns;
+            s_j  <= '1';
+            s_k  <= '1';
+            wait for 14 ns;
+            s_j  <= '0'; --1
+            s_k  <= '0';
+            wait for 26 ns;
+            
+            s_j  <= '0'; --2
+            s_k  <= '0';
+            wait for 26 ns;
+            s_j  <= '1';
+            s_k  <= '0';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 24 ns;
+            s_j  <= '0';
+            s_k  <= '1';
+            wait for 22 ns;
+            s_j  <= '1';
+            s_k  <= '1';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 26 ns;
+            
+            s_j  <= '0'; --3
+            s_k  <= '0';
+            wait for 26 ns;
+            s_j  <= '1';
+            s_k  <= '0';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 24 ns;
+            s_j  <= '0';
+            s_k  <= '1';
+            wait for 22 ns;
+            s_j  <= '1';
+            s_k  <= '1';
+            wait for 14 ns;
+            s_j  <= '0'; 
+            s_k  <= '0';
+            wait for 26 ns;
+            
+            s_j  <= '0'; --4
+            s_k  <= '0';
+            wait for 26 ns;
+            s_j  <= '1';
+            s_k  <= '0';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 24 ns;
+            s_j  <= '0';
+            s_k  <= '1';
+            wait for 22 ns;
+            s_j  <= '1';
+            s_k  <= '1';
+            wait for 14 ns;
+            s_j  <= '0';
+            s_k  <= '0';
+            wait for 26 ns;
+;
+            report "Stimulus process finished" severity note;
+            wait;
+        end process p_stimulus;    
+end Behavioral;
+```
+### simulation results
