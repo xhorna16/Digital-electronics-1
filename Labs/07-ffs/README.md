@@ -1,3 +1,4 @@
+https://github.com/xhorna16/Digital-electronics-1/blob/main/Labs/07-ffs/README.md
 ```
 D:  q(n+1)=d;
 JK: q(n+1)=j*/qn + /k* qn;
