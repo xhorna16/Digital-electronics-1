@@ -5,14 +5,14 @@ T:  q(n+1)=t*/qn + /t* qn;
 ```
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](sipka.png) | 0 | 0 | 0 |  |
-   | ![rising](sipka.png) | 0 | 1 | 0 |  |
-   | ![rising](sipka.png) | 1 | 0 | 1 |  |
-   | ![rising](sipka.png) | 1 | 1 | 1 |  |
+   |  | 0 | 0 | 0 |  |
+   |  | 0 | 1 | 0 |  |
+   |  | 1 | 0 | 1 |  |
+   |  | 1 | 1 | 1 |  |
 
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](sipka.png) | 0 | 0 | 0 | 0 | No change |
+   |  | 0 | 0 | 0 | 0 | No change |
    | ![rising](sipka.png) | 0 | 0 | 1 | 1 | No change |
    | ![rising](sipka.png) | 0 | 1 | 0 | 0 |  |
    | ![rising](sipka.png) | 0 | 1 | 1 | 0 |  |
@@ -23,10 +23,10 @@ T:  q(n+1)=t*/qn + /t* qn;
 
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](sipka.png) | 0 | 0 | 0 |  |
-   | ![rising](sipka.png) | 0 | 1 | 1 |  |
-   | ![rising](sipka.png) | 1 | 0 | 1 |  |
-   | ![rising](sipka.png) | 1 | 1 | 0 |  |
+   |  | 0 | 0 | 0 |  |
+   |  | 0 | 1 | 1 |  |
+   |  | 1 | 0 | 1 |  |
+   |  | 1 | 1 | 0 |  |
 
 ## D latch
 ```vhdl
