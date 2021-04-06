@@ -469,3 +469,5 @@ p_reset_gen : process
 ```
 ### simulation
 ![fft](fft.png)
+## Shift register
+![reg](reg.jpg)
