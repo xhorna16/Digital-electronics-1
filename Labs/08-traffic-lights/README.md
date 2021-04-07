@@ -72,7 +72,7 @@
     end process p_traffic_fsm;
 ```
 ```vhdl
-p_output_fsm : process(s_state)
+  p_output_fsm : process(s_state)
     begin
         case s_state is
             when STOP1 =>
@@ -98,7 +98,8 @@ p_output_fsm : process(s_state)
                 west_o  <= c_RED;
         end case;
     end process p_output_fsm;
-    ```
-    ## simulation
-    ![sim](sim.png)
-    ## smart controller - table
+```
+    
+## simulation
+![sim](sim.png)
+## smart controller - table
