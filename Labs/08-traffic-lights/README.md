@@ -2,7 +2,9 @@
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | C | D | B |
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `0` | `1` | `0` |
+# 
 ![n4r](n4r.png)
+# 
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-: | :-: | :-: | :-: | :-: |
 | LD16 | N15, M16, R12 | `1,0,0` | `1,1,0` | `0,1,0` |
@@ -69,3 +71,34 @@
         end if; -- Rising edge
     end process p_traffic_fsm;
 ```
+```vhdl
+p_output_fsm : process(s_state)
+    begin
+        case s_state is
+            when STOP1 =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+            when WEST_GO =>
+                south_o <= c_RED;
+                west_o  <= c_GREEN;
+            when WEST_WAIT =>
+                south_o <= c_RED;   
+                west_o  <= c_YELLOW;                  
+            when STOP2 =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+            when SOUTH_GO =>
+                south_o <= c_GREEN;
+                west_o  <= c_RED;
+            when SOUTH_WAIT =>
+                south_o <= c_YELLOW;
+                west_o  <= c_RED;   
+            when others =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+        end case;
+    end process p_output_fsm;
+    ```
+    ## simulation
+    ![sim](sim.png)
+    ## smart controller - table
