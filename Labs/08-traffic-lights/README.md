@@ -104,4 +104,3 @@
     
 ## simulation
 ![sim](sim.png)
-## smart controller - table
