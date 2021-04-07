@@ -1,3 +1,4 @@
+https://github.com/xhorna16/Digital-electronics-1/tree/main/Labs/08-traffic-lights
 | **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | C | D | B |
