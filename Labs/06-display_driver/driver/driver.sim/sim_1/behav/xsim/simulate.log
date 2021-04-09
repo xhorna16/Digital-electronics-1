@@ -1,0 +1,14 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started.
+Time: 0 ps  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Error - 2nd digit.
+Time: 900 us  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Error - 3rd digit.
+Time: 1300 us  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Error - DP.
+Time: 1700 us  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Error - 4th digit.
+Time: 1700 us  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Stimulus process finished.
+Time: 1700 us  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Ales/driver/driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd

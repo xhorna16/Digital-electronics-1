@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Desktop/Nová složka/clock_enable.vhd" \
+"../../../../../Desktop/Nová složka/cnt_up_down.vhd" \
+"../../../../../Desktop/Nová složka/hex_7seg.vhd" \
+"../../../../driver.srcs/sources_1/new/driver_7seg_4digits.vhd" \
+"../../../../driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd" \
+
+# Do not sort compile order
+nosort
