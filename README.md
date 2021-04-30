@@ -147,9 +147,7 @@ Done
 ### Link
 https://www.edaplayground.com/x/r9Ud
 | Vzdálenost [cm] | Počet rozsvícených LED |
-|-----------------|------------------------|
 | od | do |   |
-|----|----|---|
 | 400 | ∞ | 0 | 
 | 150 | 400 |  1 |
 | 100 | 150 |  2 |
