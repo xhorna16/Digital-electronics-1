@@ -146,7 +146,7 @@ Done
 ```
 ### Link
 https://www.edaplayground.com/x/r9Ud
-| Vzdálenost [cm] | PočetLED |
+| Vzdálenost [cm] | Počet LED |
 |:-:|:-:|
 | nad 400 | 0 | 
 | 150 až 400 |  1 |
